@@ -281,6 +281,7 @@ class jenkins (
   Boolean $manage_service                         = true,
   Boolean $service_enable                         = true,
   Enum['running', 'stopped'] $service_ensure      = 'running',
+  Hash[String[1], String] $service_override       = {},
   Optional[String] $service_provider              = undef,
   Hash $config_hash                               = {},
   Hash $plugin_hash                               = {},
